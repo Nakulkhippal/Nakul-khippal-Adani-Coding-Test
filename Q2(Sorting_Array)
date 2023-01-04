@@ -1,0 +1,11 @@
+public static int[][] sortColumnIndex(int[][] arr,int columnIndex){
+        int[] tempArray = new int[arr.length];
+        for(int i=0;i<arr.length;i++){
+            tempArray[i]=arr[i][columnIndex];
+        }
+        Arrays.sort(tempArray);
+        for(int i=0;i<arr.length;i++){
+            arr[i][columnIndex]=tempArray[i];
+        }
+        return arr;
+    }
